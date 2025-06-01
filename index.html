@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dentistree Multispeciality Dental Clinic</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+<header id="navbar" class="bg-white shadow-md sticky  top-0 z-50 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex hover:scale-105 transition-transform duration-300">
+          <img src="images/logo-3.jpg" alt="Dentistree Dental Clinic" class="h-16 w-20">
+          <img src="images/logo-2.jpg" alt="Dentistree Dental Clinic" class="h-12 w-35 mt-2.5">
+        </div>
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="#about" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">About Us</a>
+          <a href="#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Treatments</a>
+          <a href="#patients_smile" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Smile Stories</a>
+          <a href="#reviews" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Reviews</a>
+          <a href="#blogs" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Blogs</a>
+          <a href="#contact" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Contact Us</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+          <svg class="h-7 w-7 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white shadow-md">
+      <a href="#about" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">About Us</a>
+      <a href="#treatments" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Treatments</a>
+      <a href="#patients_smile" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Smile Stories</a>
+      <a href="#reviews" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Reviews</a>
+      <a href="#blogs" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Blogs</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Contact Us</a>
+    </div>
+</header>
+      
+<section id="hero_section" class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white px-6" style="background-image: url('https://ghpnews.digital/wp-content/uploads/2025/04/image.1304f5098ac0ebf99bfd0f23f8998fc7.1744628091-1568x882.jpg');">
+    <div class="absolute inset-0 bg-[#006400]/60"></div>
+    <div class="max-w-4xl text-center animate-fade-in-up">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-white font-serif drop-shadow-lg">
+          Personalized Dental Care with a Gentle Touch
+        </h1>
+        <p class="text-lg md:text-xl mb-8 text-white font-light drop-shadow-md">
+          Dentistree Multispeciality Dental Clinic in Wakad offers expert dental services tailored for your family's needs from routine checkups to advanced treatments.
+        </p>
+        <a href="#contact" class="inline-block bg-white hover:scale-105 transition text-[#006400]/60 text-lg font-medium px-6 py-3 rounded-full shadow-lg">
+          Book Appointment
+        </a>
+      </div>
+</section>
+
+<section id="about" class="container relative px-6 pt-25 pb-20 overflow-hidden">
+    <div class="absolute right-0 top-0 h-full w-1.5/3 z-0 pointer-events-none">
+      <img src="https://t4.ftcdn.net/jpg/01/91/91/17/360_F_191911785_sYzpVZaWI1Op57gOMI2Hw8KAaN0H3O7l.jpg" 
+           alt="Dental Background"
+           class="w-full h-full opacity-30 dental_image" />
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-8 font-serif text-[#006400]
+                 opacity-0 translate-y-6 transition-all duration-1000"
+          data-animate>
+        Dentistree Multispeciality Dental Clinic
+      </h2>
+      <div class="md:flex md:items-start md:gap-10">
+        <div class="mt-10 overflow-hidden relative w-full max-w-[400px] opacity-0 -translate-x-6 transition-all duration-1000" data-animate>
+          <div class="flex gap-8 scroll-loop-track">
+            <img src="images/clinic_image_1.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 1" />
+            <img src="images/clinic_image_2.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 2" />
+            <img src="images/clinic_image_3.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 3" />
+            <img src="images/clinic_image_5.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 5" />
+            <img src="images/clinic_image_6.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 6" />
+            <img src="images/clinic_image_7.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 7" />
+            <img src="images/clinic_image_1.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 1" />
+            <img src="images/clinic_image_2.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 2" />
+            <img src="images/clinic_image_3.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 3" />
+            <img src="images/clinic_image_5.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 5" />
+            <img src="images/clinic_image_6.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 6" />
+            <img src="images/clinic_image_7.jpg" class="rounded-xl h-70 w-auto shadow-md" alt="Clinic View 7" />
+          </div>
+        </div> 
+        <div class="md:w-2/3 text-[#006400] space-y-4 pt-4 text-justify relative z-10 opacity-0 translate-y-6 transition-all duration-1000" data-animate>
+          <p class="text-gray-700 text-base leading-relaxed mt-2 mb-5">
+            Dentistree Multispeciality Dental Clinic in Wakad, Pune provides world-class dental care with a trusted team of professionals. We focus on delivering treatment efficiently and effectively for our patients' long-term oral health.
+            Maintaining oral hygiene through regular brushing, flossing, and good nutrition is essential. Dentistree Dental Clinic stands as one of the most recommended dental practices in Wakad for comprehensive oral care solutions.
+            <br><br>
+            We offer a wide range of treatments using the latest dental technologies. Patient comfort is our top priority, and we aim to provide the most suitable treatment plans that relieve pain and restore confident smiles.
+            <br><br>
+            If you're experiencing any dental issues, we encourage you to visit our clinic and explore personalized treatment options before it's too late.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="more_info" class="relative bg-[#e8f5e9] py-10 px-6 overflow-hidden">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/012/188/505/small_2x/geometric-simple-minimalistic-topographic-line-round-lines-abstract-pattern-of-gray-lines-business-background-lines-wave-design-vector.jpg" alt="Background Decorative" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
+    <div class="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-10">
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-[#006400] mb-6">
+          Modern Dentistry with Expert Care
+        </h2>
+        <p class="text-gray-700 text-lg mb-4">
+          Dentistree Multispeciality Dental Clinic in Wakad, Pune is known for offering expert care in a comforting environment. Our dedicated team ensures your dental experience is effective and stress-free.
+        </p>
+        <ul class="list-none ml-1 text-[#006400] space-y-2 text-base mb-6">
+            <li><i class="fas fa-arrow-right mr-2 text-green-700"></i>Experienced & Caring Team</li>
+            <li><i class="fas fa-arrow-right mr-2 text-green-700"></i>Strict Sterilization Protocols</li>
+            <li><i class="fas fa-arrow-right mr-2 text-green-700"></i>Warm & Patient-Friendly Environment</li>
+            <li><i class="fas fa-arrow-right mr-2 text-green-700"></i>Gentle & Painless Treatments</li>
+          </ul>
+          
+          <p class="text-base font-semibold text-gray-700">
+            <i class="fas fa-phone mr-2 text-green-700"></i>
+            Call to book appointment: 
+            <a href="tel:+91-9764846289" class="hover:underline text-green-800">+91-9764846289</a>
+          </p>
+      </div>
+      <div class="grid grid-cols-1 grid-cols-2 gap-6 lg:w-1/2">
+        <div class="bg-white shadow-md p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+          <img src="images/complete_dental_solution.jpg" alt="Complete Dental Solution" class="h-20 mx-auto mb-4" />
+          <h4 class="text-lg font-bold text-[#006400]">Complete Dental Solution</h4>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-xl text-center hover:scale-105 transition duration-300">
+          <img src="images/dental_team.jpg" alt="Expert Team" class="h-20 mx-auto mb-4" />
+          <h4 class="text-lg font-bold text-[#006400]">Expert Dentists & Team</h4>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-xl text-center hover:scale-105 transition duration-300 ">
+          <img src="images/dental_safety.jpg" alt="Safety & Quality" class="h-16 mx-auto mb-4" />
+          <h4 class="text-lg font-bold text-[#006400]">Safety & Quality</h4>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-xl text-center hover:scale-105 transition duration-300 ">
+            <img src="images/latest_equipment.jpg" alt="Safety & Quality" class="h-16 mx-auto mb-4" />
+            <h4 class="text-lg font-bold text-[#006400]">Latest Equipments</h4>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="treatments" class="py-25  max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-serif font-bold text-center text-[#006400] mb-10">
+      What We Offer
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 overflow-x-auto sm:overflow-x-visible whitespace-nowrap scroll-smooth">
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Root Canal Treatment</h3>
+        <img
+          src="https://stapolloniadental.com/wp-content/uploads/2023/07/Root_Canal_Therapy_AdobeExpress.gif"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Braces Treatment</h3>
+        <img
+          src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-1.gif"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Wisdom Tooth Removal</h3>
+        <img
+          src="https://i.pinimg.com/originals/86/6e/cf/866ecf4af4da788cdfc7ac70959ce5db.gif"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Kids Dentistry</h3>
+        <img
+          src="https://howardcountydentist.com/system/images/services/dental/interior/pediatric-dentistry/pediatric-dentistry1.jpg"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Cavity Fillings</h3>
+        <img
+          src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-5.gif"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
+        <h3 class="text-xl font-semibold text-[#006400]">Dental Implants</h3>
+        <img
+          src="https://www.oriondental.hu/wp-content/uploads/2020/08/fogimplant%C3%A1tum.gif"
+          alt="Cosmetic Treatment"
+          class="rounded-lg object-cover h-40 w-full"/>
+      </div>
+    </div>
+</section>
+  
+<section id="about_doctor" class="relative py-25 overflow-hidden">
+    <div class="absolute top-0 h-full w-full z-0 pointer-events-none">
+      <img src="https://img.freepik.com/free-vector/white-background-abstract-with-wavy-line_361591-3889.jpg"
+           alt="Dental Background"
+           class="w-full h-full opacity-60" />
+    </div>
+  
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-10 font-serif text-[#006400]
+                 opacity-0 translate-y-6 transition-all duration-1000"
+          data-animate>
+        Meet Dr. Dhanashree Dalal Simant
+      </h2>
+  
+      <div class="md:flex md:items-center md:gap-12">
+        <div class="md:w-1/3 mb-10 md:mb-0 opacity-0 -translate-x-6 transition-all duration-1000" data-animate>
+          <img src="images/doctor_image.png" alt="Dr. Dhanashree Dalal Simant"
+               class="rounded-xl shadow-xl w-full h-auto object-cover" />
+        </div>
+  
+        <div class="md:w-2/3 text-[#004d40] space-y-4 text-justify opacity-0 translate-y-6 transition-all duration-1000"
+             data-animate>
+          <p class="text-base leading-relaxed text-gray-700">
+            Dr. Dhanashree Dalal Simant is the heart and soul of Dentistree Multispeciality Dental Clinic. With a Bachelor of Dental Surgery (BDS) and a Master of Dental Surgery (MDS) in Pediatric Dentistry, she brings a wealth of expertise and gentle care to her patients.
+          </p>
+          <p class="text-base leading-relaxed text-gray-700">
+            Her specialization in treating children ensures a compassionate, painless, and fun dental experience, especially for first-time visitors. She is passionate about preventive care and educating both children and parents for better oral hygiene habits.
+          </p>
+          <p class="text-base leading-relaxed text-gray-700">
+            Dr. Dhanashree believes in the power of empathy and modern dental technology. Her warm nature and child-friendly approach make every visit a comfortable one — helping little smiles grow confidently and healthily.
+          </p>
+          <p class="text-base leading-relaxed text-gray-700 font-semibold">
+            “A child's smile is the purest form of joy. I'm committed to preserving it with care and compassion.”
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="patients_smile" class="relative py-25 bg-[linear-gradient(to_top_left,_##006400,_white)] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <h2 class="text-3xl md:text-4xl text-center font-bold font-serif text-[#006400] mb-12 animate-fade-in-up">
+        Our Happy Patients
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 animate-fade-in-up">
+        <div class="relative group overflow-hidden rounded-xl shadow-lg transition transform hover:scale-105">
+          <img src="images/client_1.jpg" alt="Before & After" class="w-full h-64 transition duration-500" />
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg transition transform hover:scale-105">
+          <img src="images/client_2.jpg" alt="Client 2" class="w-full h-64 " />
+        </div>
+        <div class="relative group overflow-hidden rounded-xl shadow-lg transition transform hover:scale-105">
+          <video controls muted loop class="w-full h-64 object-cover">
+            <source src="images/client_3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section id="reviews" class="relative py-25 bg-[#f9f9f9]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl text-center font-bold mb-12 text-[#006400] font-serif animate-fade-in-up">
+        What Our Patients Say
+      </h2>
+      <div class="relative group">
+        <div id="reviewSlider" class="flex space-x-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hidden px-2 pb-6 transition-all duration-300">
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class=" items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Sagar Pawar</h4>
+                <div class="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                I had a great experience with Dr. Dhanashree. She explained everything clearly, made me feel at ease, and addressed all my concerns with care. The clinic was clean, the staff welcoming, and her expertise truly stood out. I highly recommend her for anyone seeking a skilled and compassionate dentist.
+            </p>
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Shivani Thapliyal</h4>
+                <div class="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                We had been looking for a good dentist for our daughter, and our search ended with Dr. Dhanashree.
+                She is kind and empathetic with children, yet highly professional, committed, and always available when needed.
+                Her guidance and support have been exceptional — she truly feels like a part of our family now.            </p>
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Rohit Joshi</h4>
+                <div class="text-yellow-400 text-lg">★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                This was my first visit to Dentistree clinic in Wakad. Dr was good in terms of treatment and gave good explanation on what needs to be done than just bombarding on things. Looking forward for future treatments with Dentistree. Hoping to get painless and affordable treatments.
+            </p>
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Akshay Desai</h4>
+                <div class="text-yellow-400 text-lg">★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                I came to the Dentistree with my nephew(4 years) who lost his upper front teeth. Dr. Dhanashree has given him right diagnosis and excellent treatment. After that proper follow-ups as well. I would surely, without a doubt, recommend Dentistree for all dental issues.
+            </p>
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Neha Patel</h4>
+                <div class="text-yellow-400 text-lg">★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                Wonderful experience — the doctor and staff are very punctual and never keep patients waiting.
+                The entire root canal process was smooth and nearly painless, with the doctor making sure I felt at ease.
+                They follow up on their own, offer easy payment options, and keep pricing fair — overall a great clinic.
+            </p>    
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Priya Faye</h4>
+                <div class="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                I recently chipped my tooth in an accident and consulted
+                Dr. Dhanashree for treatment. She handled my case with great care and listened to all my concerns patiently. Dr.Dhanashree performed a root canal procedure, and I'm very pleased with the results. Her expertise and kindness made the entire experience comfortable and reassuring.</p>
+          </div>
+          <div class="min-w-[300px] max-w-xs bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg p-6 snap-start hover:scale-105 transition">
+            <div class="items-center space-x-4 mb-2">
+                <h4 class="font-semibold text-lg text-gray-800">Hiraram Choudhary</h4>
+                <div class="text-yellow-400 text-lg">★★★★★</div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                I was told in another clinic to get the tooth removed and implant to be done . Since i was not convinced , I visited this dental clinic where the doctor said it would be hard but we can attempt saving the tooth . The tooth was saved. I was happy that my tooth was saved and not removed . Great experience, hardworking and efficient doctor.</div>
+        </div>
+        <div class="flex justify-center mt-6 space-x-4">
+          <button onclick="scrollReviews(-1)" class="bg-[#006400] hover:bg-gray-700 text-white p-3 w-12 rounded-full shadow-lg transition">
+            &#8592;
+          </button>
+          <button id="contact" onclick="scrollReviews(1)" class="bg-[#006400] hover:bg-gray-700 text-white p-3 w-12 rounded-full shadow-lg transition">
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<section class="contact relative flex items-center max-w-6xl pb-20 mx-auto min-h-[500px]">
+    <div class="flex-1 flex flex-col justify-center mt-8 ml-20 space-y-6 online_consultation_container">
+      <h2 class="text-3xl font-bold text-green-700 font-serif">Online Consultations Available</h2>
+      <p class="text-gray-700 leading-relaxed max-w-xl">
+        We offer convenient and professional online dental consultations. Connect with Dr. Dhanashree from the comfort of your home for expert advice and personalized care.
+      </p>
+      <p class="text-base font-semibold text-gray-700">
+        <i class="fas fa-phone mr-2 text-green-700"></i>
+        Call to Book Appointment:
+        <a href="tel:+91-9764846289" class="hover:underline text-green-800">+91-9764846289</a>
+      </p>
+      <img src="https://media.istockphoto.com/id/1396617066/photo/online-consultation-doctor-help-in-clinic-using-laptop.jpg?s=612x612&w=0&k=20&c=1zjylXd-V3dsbcYf-ZLz1sNMFi_TfsZQiTYymlVlxdM=" 
+           alt="Online consultation" 
+           class="rounded-lg shadow-lg w-full max-w-sm object-cover" />
+    </div>
+    <div class="w-[330px] shadow-2xl bg-green-600 overflow-hidden flex flex-col justify-start mr-20  h-[90%] self-stretch">
+      <div class="p-6 bg-green-600 text-white flex flex-col">
+        <h3 class="text-xl font-semibold mb-4">Location</h3>
+        <p class="text-sm leading-relaxed">
+          Sonigara Laurel, 1st Floor, 101, Kaspate Wasti Rd,
+          above Sujata Mastani, Wakad,
+          Pimpri-Chinchwad, Maharashtra 411057
+        </p>
+      </div>
+      <div class="p-6 bg-white flex flex-col flex-1 justify-between">
+        <div>
+          <h4 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+           Opening Hours
+           <img src="https://thumb.ac-illust.com/7d/7dd5d3192f62850766bfcbeb72d3dcdb_t.jpeg" class="h-20 ml-3" alt="">
+          </h4>
+          <ul class="space-y-2">
+            <li class="text-sm text-gray-700 mt-4" >Monday - Saturday (Morning)</li> 
+            <li class="text-lg text-green-700">10:00 AM - 2:00 PM</li>
+            <li class="text-sm text-gray-700 mt-6">Monday - Saturday (Evening)</li> 
+            <li class="text-lg text-green-700">5:00 PM - 9:00 PM</li>
+            <li class="text-sm text-gray-700 mt-6">Sunday</li>
+            <li class="text-lg text-green-700">Closed (By Appointment)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="blogs" class="relative bg-gray-100 py-25 px-4">
+    <div class="relative max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-green-700 font-serif mb-12">Latest Blog Posts</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="blog-card opacity-0 -translate-x-6 transition-all duration-700 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+          <img src="https://www.diagnopein.com/img/BlogImages/Copy%20of%20Web%20Blog%20Images%20(15)%20(2).png" class="w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-1">
+            <div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">Tips for Your Child's First Dental Visit</h3>
+              <p class="text-gray-600 text-sm mb-4">Discover how to prepare your child for their first dental appointment to ensure a positive experience.</p>
+            </div>
+            <a href="https://www.dentistjustforkids.com/10-ways-to-prepare-your-child-for-their-first-dental-visit/" target="_blank" class="mt-auto inline-block text-green-700 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card opacity-0 translate-y-6 transition-all duration-800 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+          <img src="https://caseysmiles.com.au/wp-content/uploads/2023/07/angled-mirror-used-by-dentist-doctor-little-girl-with-mouth-open-dental-office-dentistry-specialist-during-child-cavity-consultation-stomatology-office-using-modern-technology-scaled-1.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-1">
+            <div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">Understanding Pediatric Dental Treatments</h3>
+              <p class="text-gray-600 text-sm mb-4">Learn about common pediatric dental procedures and their importance in maintaining your child's oral health.</p>
+            </div>
+            <a href="https://happykidsdental.org/blog/common-pediatric-dental-procedures-understanding-the-basics" target="_blank" class="mt-auto inline-block text-green-700 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-card opacity-0 translate-x-6 transition-all duration-700 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+          <img src="https://warrnambooldental.com.au/wp-content/uploads/2020/04/can-you-get-braces-if-you-have-missing-teeth-warrnambool-1024x684.jpg" class="w-full h-56 object-cover" />
+          <div class="p-6 flex flex-col justify-between flex-1">
+            <div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">Braces for Kids: What Parents Need to Know</h3>
+              <p class="text-gray-600 text-sm mb-4">Explore essential information about children's braces, including when to start and how to care for them.</p>
+            </div>
+            <a href="https://www.pricefamilyortho.com/blog/what-parents-need-to-know-about-kids-braces/" target="_blank" class="mt-auto inline-block text-green-700 font-semibold hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<footer id="footer" class="bg-green-700 text-white py-6 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="space-y-4">
+        <div class="flex gap-0">
+            <img src="images/logo-3.jpg" alt="Dentistree Dental Clinic" class="h-16 w-20 ">
+            <img src="images/logo-2.jpg" alt="Dentistree Dental Clinic" class="h-16 w-40 ">
+        </div>
+        <p class="max-w-xs">
+          Dentistree Multispeciality Dental Clinic<br>
+          Dr. Dhanashree Dalal Simant, BDS, MDS (Pediatric Dentistry)<br>
+          Wakad, Pune - Pimpri-Chinchwad, Maharashtra 411057
+        </p>
+        <div class="flex space-x-4 text-2xl">
+          <a href="https://www.instagram.com/ddentistree_dental/" aria-label="Instagram" class="hover:text-gray-300  hover:scale-130 "><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-gray-300  hover:scale-130"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About Us</a></li>
+          <li><a href="#treatments" class="hover:underline">Services</a></li>
+          <li><a href="#reviews" class="hover:underline">Reviews</a></li>
+          <li><a href="#about_doctor" class="hover:underline">Meet the Doctor</a></li>
+          <li><a href="#blogs" class="hover:underline">Blogs</a></li>
+          <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Opening Hours</h3>
+        <ul class="text-sm space-y-2 mb-6">
+            <li class="text-sm mt-3" >Monday - Saturday (Morning)</li> 
+            <li class="text-lg ">10:00 AM - 2:00 PM</li>
+            <li class="text-sm mt-3 ">Monday - Saturday (Evening)</li> 
+            <li class="text-lg ">5:00 PM - 9:00 PM</li>
+            <li class="text-sm mt-3">Sunday</li>
+            <li class="text-lg ">Closed (By Appointment)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Our Location</h3>
+        <a href="https://maps.app.goo.gl/xuogZhp7jMCanC4V7" target="_blank" rel="noopener noreferrer">
+            <img src="images/map_image.png" alt="Map of Clinic Location" class="rounded-md shadow-md mb-3 w-full object-cover max-w-sm" />
+        </a>
+        <p class="text-sm leading-relaxed">
+          Sonigara Laurel, 1st Floor, 101, Kaspate Wasti Rd,
+          above Sujata Mastani, Wakad,
+          Pimpri-Chinchwad, Maharashtra 411057
+        </p>
+      </div>
+    </div>
+    <hr class="mt-6">
+    <div class="mt-6 pr-5 text-center text-sm ">
+      &copy; 2025 Dentistree Multispeciality Dental <br> Clinic All rights reserved.
+    </div>
+</footer>
+
+<button id="backToTopBtn" title="Go to top" class="fixed text-3xl bottom-6 right-5 bg-white hover:scale-105 text-green py-2 px-[18px] rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50">
+  ↑
+</button>
+
+
+<script>
+
+    //blog animation
+    const blogObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', '-translate-x-6', 'translate-x-6', 'translate-y-6');
+          entry.target.classList.add('opacity-100', 'translate-x-0', 'translate-y-0');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.blog-card').forEach(card => {
+      blogObserver.observe(card);
+    });
+
+    //reviews
+    function scrollReviews(direction) {
+      const slider = document.getElementById('reviewSlider');
+      const scrollAmount = 320; // width of a card + spacing
+      slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+
+    //about and about_doctor animations
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0', 'translate-x-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-6', '-translate-x-6');
+            observer.unobserve(entry.target); // run once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    //navbar
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    //scroll bottom to top button at end 
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    if (scrollTop + windowHeight >= documentHeight - 500) {
+      backToTopBtn.classList.add("opacity-100");
+      backToTopBtn.classList.remove("opacity-0");
+    } else {
+      backToTopBtn.classList.remove("opacity-100");
+      backToTopBtn.classList.add("opacity-0");
+    }
+    });
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+</script>
+  
+</body>
+</html>

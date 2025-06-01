@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+}
+
+/* hero section  */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+/* about section */
+.scroll-loop-track {
+  width: max-content;
+  animation: scrollLoop 30s linear infinite;
+}
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* reviews section */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* blog section */
+@keyframes slide-in-left {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-in-right {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes fade-in-up {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 1s ease forwards;
+}
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease forwards;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 2s ease forwards;
+}
+
+/* scroll bottom to top button at end */
+#backToTopBtn.show {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+  /* more_info section */
+  .dental_image {
+    width: 100% !important;
+    height: 40% !important;
+    object-fit: cover;
+    display: block;
+    margin-top: 42rem;
+  }
+
+  /* contact us */
+  .contact.flex {
+    flex-direction: column;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .contact.flex > div:first-child {
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact.flex img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact.flex a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact.flex > div:last-child {
+    width: 100%;
+    margin: 2rem 0 0;
+    height: auto;
+  }
+
+  .contact.flex > div:last-child .p-6 {
+    padding: 1.25rem;
+  }
+
+  .contact.flex h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact.flex h3, 
+  .contact.flex h4 {
+    font-size: 1.25rem;
+  }
+
+  .contact.flex ul li {
+    font-size: 0.95rem;
+  }
+
+  .contact.flex img.ml-3 {
+    height: 60px;
+    margin-left: 0.5rem;
+  }
+
+  #about_doctor , #patients_smile , #reviews , #blogs , #treatments {
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    padding-bottom: 0px;
+  }
+
+  .online_consultation_container {
+    margin-left: 0px;
+  }
+}
+
