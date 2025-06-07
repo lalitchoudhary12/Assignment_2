@@ -26,7 +26,15 @@
         </div>
         <nav class="hidden md:flex space-x-8 items-center">
           <a href="#about" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">About Us</a>
-          <a href="#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Treatments</a>
+          <div class="relative">
+            <a href="#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300 peer">Services</a>
+            <div class="absolute hidden peer-hover:flex hover:flex flex-col bg-white shadow-md pt-4 rounded-md z-50 min-w-[180px]">
+              <a href="services.html?category=pain-relief" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Pain Relief</a>
+              <a href="services.html?category=cosmetic-treatments" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Cosmetic Treatment</a>
+              <a href="services.html?category=teeth-replacement" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Teeth Replacement</a>
+              <a href="services.html?category=preventive-dentistry" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Preventive Dentistry</a>
+            </div>
+          </div>        
           <a href="#patients_smile" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Smile Stories</a>
           <a href="#reviews" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Reviews</a>
           <a href="#blogs" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Blogs</a>
@@ -42,7 +50,15 @@
     </div>
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white shadow-md">
       <a href="#about" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">About Us</a>
-      <a href="#treatments" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Treatments</a>
+      <div class="py-2">
+        <a href="#treatments" class="block text-gray-700 hover:text-[#006400]/60 font-medium">Services</a>
+        <div class="pl-3 space-y-1">
+          <a href="services.html?category=pain-relief" class="block text-sm text-gray-600 pt-3 hover:text-[#006400]/60">Pain Relief</a>
+          <a href="services.html?category=cosmetic-treatments" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Cosmetic Treatment</a>
+          <a href="services.html?category=teeth-replacement" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Teeth Replacement</a>
+          <a href="services.html?category=preventive-dentistry" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Preventive Dentistry</a>
+        </div>
+      </div>
       <a href="#patients_smile" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Smile Stories</a>
       <a href="#reviews" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Reviews</a>
       <a href="#blogs" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Blogs</a>
@@ -50,7 +66,7 @@
     </div>
 </header>
       
-<section id="hero_section" class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white px-6" style="background-image: url('https://ghpnews.digital/wp-content/uploads/2025/04/image.1304f5098ac0ebf99bfd0f23f8998fc7.1744628091-1568x882.jpg');">
+<section id="hero_section" class=" overflow-hidden relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white px-6" style="background-image: url('https://ghpnews.digital/wp-content/uploads/2025/04/image.1304f5098ac0ebf99bfd0f23f8998fc7.1744628091-1568x882.jpg');">
     <div class="absolute inset-0 bg-[#006400]/60"></div>
     <div class="max-w-4xl text-center animate-fade-in-up">
         <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-white font-serif drop-shadow-lg">
@@ -274,7 +290,7 @@
     </div>
 </section>
   
-<section id="reviews" class="relative py-25 bg-[#f9f9f9]">
+<section id="reviews" class=" overflow-hidden relative py-25 bg-[#f9f9f9]">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl md:text-4xl text-center font-bold mb-12 text-[#006400] font-serif animate-fade-in-up">
         What Our Patients Say
@@ -358,7 +374,7 @@
     </div>
 </section>
   
-<section class="contact relative flex items-center max-w-6xl pb-20 mx-auto min-h-[500px]">
+<section class=" overflow-hidden contact relative flex items-center max-w-6xl pb-20 mx-auto min-h-[500px]">
     <div class="flex-1 flex flex-col justify-center mt-8 ml-20 space-y-6 online_consultation_container">
       <h2 class="text-3xl font-bold text-green-700 font-serif">Online Consultations Available</h2>
       <p class="text-gray-700 leading-relaxed max-w-xl">
@@ -401,7 +417,7 @@
     </div>
 </section>
 
-<section id="blogs" class="relative bg-gray-100 py-25 px-4">
+<section id="blogs" class=" overflow-hidden relative bg-gray-100 py-25 px-4">
     <div class="relative max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center text-green-700 font-serif mb-12">Latest Blog Posts</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -459,7 +475,6 @@
       <div>
         <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Quick Links</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:underline">Home</a></li>
           <li><a href="#about" class="hover:underline">About Us</a></li>
           <li><a href="#treatments" class="hover:underline">Services</a></li>
           <li><a href="#reviews" class="hover:underline">Reviews</a></li>
@@ -497,7 +512,7 @@
     </div>
 </footer>
 
-<button id="backToTopBtn" title="Go to top" class="fixed text-3xl bottom-6 right-5 bg-white hover:scale-105 text-green py-2 px-[18px] rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50">
+<button id="backToTopBtn" title="Go to top" class="fixed text-3xl bottom-6 right-5 bg-white hover:scale-105 text-green py-2 px-[16px] rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50">
   ↑
 </button>
 

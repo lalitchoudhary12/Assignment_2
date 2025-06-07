@@ -72,9 +72,17 @@
               <img src="images/logo-2.jpg" alt="Dentistree Dental Clinic" class="h-12 w-35 mt-2.5">
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
-              <a href="index.html#home" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Home</a>
+              <a href="index.html" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Home</a>
               <a href="index.html#about" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">About Us</a>
-              <a href="index.html#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Treatments</a>
+              <div class="relative">
+                <a href="index.html#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300 peer">Services</a>
+                <div class="absolute hidden peer-hover:flex hover:flex flex-col bg-white shadow-md pt-4 rounded-md z-50 min-w-[180px]">
+                  <a href="services.html?category=pain-relief" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Pain Relief</a>
+                  <a href="services.html?category=cosmetic-treatments" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Cosmetic Treatment</a>
+                  <a href="services.html?category=teeth-replacement" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Teeth Replacement</a>
+                  <a href="services.html?category=preventive-dentistry" class="px-4 py-2 text-gray-700 hover:bg-[#006400]/10 hover:text-[#006400]/60 text-sm whitespace-nowrap">Preventive Dentistry</a>
+                </div>
+              </div> 
               <a href="index.html#patients_smile" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Smile Stories</a>
               <a href="index.html#reviews" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Reviews</a>
               <a href="index.html#blogs" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Blogs</a>
@@ -89,16 +97,24 @@
           </div>
         </div>
         <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white shadow-md">
-          <a href="index.html#home" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Home</a>
+          <a href="index.html" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Home</a>
           <a href="index.html#about" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">About Us</a>
-          <a href="index.html#treatments" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Treatments</a>
+          <div class="py-2">
+            <a href="index.html#treatments" class="block text-gray-700 hover:text-[#006400]/60 font-medium">Services</a>
+            <div class="pl-3 space-y-1">
+              <a href="services.html?category=pain-relief" class="block text-sm text-gray-600 pt-3 hover:text-[#006400]/60">Pain Relief</a>
+              <a href="services.html?category=cosmetic-treatments" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Cosmetic Treatment</a>
+              <a href="services.html?category=teeth-replacement" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Teeth Replacement</a>
+              <a href="services.html?category=preventive-dentistry" class="block text-sm text-gray-600 pt-2 hover:text-[#006400]/60">Preventive Dentistry</a>
+            </div>
+          </div>
           <a href="index.html#patients_smile" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Smile Stories</a>
           <a href="index.html#reviews" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Reviews</a>
           <a href="index.html#blogs" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Blogs</a>
           <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Contact Us</a>
         </div>
 </header>
-<section id="services" class="py-12 px-6 bg-gray-50">
+<section id="services" class="py-12 px-6 bg-gray-50 overflow-hidden">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center text-[#006400] mb-10">Our Treatments</h2>
       <div class="service-item" data-category="pain-relief">
@@ -210,7 +226,7 @@
         </div>
       </div>
       <div class="service-item" data-category="cosmetic-treatments">
-        <div class="px-6 max-w-6xl mx-auto">
+        <div class=" max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
             <div class="flip-card w-full md:w-1/2 h-64">
               <div class="flip-inner w-full h-full">
@@ -344,7 +360,7 @@
         </div>
       </div>
       <div class="service-item" data-category="teeth-replacement">
-        <div class="px-6 max-w-6xl mx-auto">
+        <div class=" max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
             <div class="flip-card w-full md:w-1/2 h-64">
               <div class="flip-inner w-full h-full">
@@ -479,7 +495,7 @@
         </div>
       </div>
       <div class="service-item" data-category="preventive-dentistry">
-        <div class="px-6 max-w-6xl mx-auto">
+        <div class=" max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
             <div class="flip-card w-full md:w-1/2 h-64">
               <div class="flip-inner w-full h-full">
@@ -614,6 +630,67 @@
       </div>
     </div>
 </section>
+<footer id="footer" class="bg-green-700 text-white py-6 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="space-y-4">
+        <div class="flex gap-0">
+            <img src="images/logo-3.jpg" alt="Dentistree Dental Clinic" class="h-16 w-20 ">
+            <img src="images/logo-2.jpg" alt="Dentistree Dental Clinic" class="h-16 w-40 ">
+        </div>
+        <p class="max-w-xs">
+          Dentistree Multispeciality Dental Clinic<br>
+          Dr. Dhanashree Dalal Simant, BDS, MDS (Pediatric Dentistry)<br>
+          Wakad, Pune - Pimpri-Chinchwad, Maharashtra 411057
+        </p>
+        <div class="flex space-x-4 text-2xl">
+          <a href="https://www.instagram.com/ddentistree_dental/" aria-label="Instagram" class="hover:text-gray-300  hover:scale-130 "><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-gray-300  hover:scale-130"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="index.html#about" class="hover:underline">About Us</a></li>
+          <li><a href="index.html#treatments" class="hover:underline">Services</a></li>
+          <li><a href="index.html#reviews" class="hover:underline">Reviews</a></li>
+          <li><a href="index.html#about_doctor" class="hover:underline">Meet the Doctor</a></li>
+          <li><a href="index.html#blogs" class="hover:underline">Blogs</a></li>
+          <li><a href="index.html#contact" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Opening Hours</h3>
+        <ul class="text-sm space-y-2 mb-6">
+            <li class="text-sm mt-3" >Monday - Saturday (Morning)</li> 
+            <li class="text-lg ">10:00 AM - 2:00 PM</li>
+            <li class="text-sm mt-3 ">Monday - Saturday (Evening)</li> 
+            <li class="text-lg ">5:00 PM - 9:00 PM</li>
+            <li class="text-sm mt-3">Sunday</li>
+            <li class="text-lg ">Closed (By Appointment)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4 border-b border-white pb-2">Our Location</h3>
+        <a href="https://maps.app.goo.gl/xuogZhp7jMCanC4V7" target="_blank" rel="noopener noreferrer">
+            <img src="images/map_image.png" alt="Map of Clinic Location" class="rounded-md shadow-md mb-3 w-full object-cover max-w-sm" />
+        </a>
+        <p class="text-sm leading-relaxed">
+          Sonigara Laurel, 1st Floor, 101, Kaspate Wasti Rd,
+          above Sujata Mastani, Wakad,
+          Pimpri-Chinchwad, Maharashtra 411057
+        </p>
+      </div>
+    </div>
+    <hr class="mt-6">
+    <div class="mt-6 pr-5 text-center text-sm ">
+      &copy; 2025 Dentistree Multispeciality Dental <br> Clinic All rights reserved.
+    </div>
+</footer>
+
+<button id="backToTopBtn" title="Go to top" class="fixed text-3xl bottom-6 right-5 bg-white hover:scale-105 text-green py-2 px-[18px] rounded-full shadow-lg transition-opacity duration-300 opacity-0 z-50">
+  ↑
+</button>
 
 <script>
   // Filter services based on URL parameter
@@ -640,7 +717,27 @@
       mobileMenu.classList.add('hidden');
     });
   });
-
+ 
+  //scroll bottom to top button at end 
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+  if (scrollTop + windowHeight >= documentHeight - 500) {
+    backToTopBtn.classList.add("opacity-100");
+    backToTopBtn.classList.remove("opacity-0");
+  } else {
+    backToTopBtn.classList.remove("opacity-100");
+    backToTopBtn.classList.add("opacity-0");
+  }
+  });
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 </script>
 <!-- Include AOS library for animations -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
