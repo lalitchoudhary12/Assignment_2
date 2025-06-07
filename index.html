@@ -8,6 +8,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  
+  
 </head>
 
 <body class="bg-white text-gray-800">
@@ -66,7 +71,7 @@
            alt="Dental Background"
            class="w-full h-full opacity-30 dental_image" />
     </div>
-    <div class="max-w-6xl mx-auto relative z-10">
+    <div class="max-w-6xl mx-auto relative  z-10">
       <h2 class="text-3xl md:text-4xl text-center font-bold mb-8 font-serif text-[#006400]
                  opacity-0 translate-y-6 transition-all duration-1000"
           data-animate>
@@ -146,52 +151,68 @@
       </div>
     </div>
 </section>
-
-<section id="treatments" class="py-25  max-w-7xl mx-auto px-6">
-    <h2 class="text-4xl font-serif font-bold text-center text-[#006400] mb-10">
-      What We Offer
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 overflow-x-auto sm:overflow-x-visible whitespace-nowrap scroll-smooth">
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Root Canal Treatment</h3>
-        <img
-          src="https://stapolloniadental.com/wp-content/uploads/2023/07/Root_Canal_Therapy_AdobeExpress.gif"
-          class="rounded-lg object-cover h-40 w-full"/>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Braces Treatment</h3>
-        <img
-          src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-1.gif"
-          class="rounded-lg object-cover h-40 w-full"/>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Wisdom Tooth Removal</h3>
-        <img
-          src="https://i.pinimg.com/originals/86/6e/cf/866ecf4af4da788cdfc7ac70959ce5db.gif"
-          class="rounded-lg object-cover h-40 w-full"/>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Kids Dentistry</h3>
-        <img
-          src="https://howardcountydentist.com/system/images/services/dental/interior/pediatric-dentistry/pediatric-dentistry1.jpg"
-          class="rounded-lg object-cover h-40 w-full"/>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Cavity Fillings</h3>
-        <img
-          src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-5.gif"
-          class="rounded-lg object-cover h-40 w-full"/>
-      </div>
-      <div class="bg-gray-100 p-6 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4 transform transition duration-300 hover:scale-105 hover:rotate-1 min-w-[250px]">
-        <h3 class="text-xl font-semibold text-[#006400]">Dental Implants</h3>
-        <img
-          src="https://www.oriondental.hu/wp-content/uploads/2020/08/fogimplant%C3%A1tum.gif"
-          alt="Cosmetic Treatment"
-          class="rounded-lg object-cover h-40 w-full"/>
+  
+<section id="treatments" class="relative py-24 max-w-6xl mx-auto px-6 overflow-hidden bg-white">
+  <h2 
+    class="text-4xl font-serif font-bold text-center text-[#006400] mb-4 relative z-10"
+    data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000"
+  >
+    What We Offer
+  </h2>
+  <p 
+    class="text-center text-gray-700 max-w-xl mx-auto mb-10 text-lg z-10 relative"
+    data-aos="fade-up" data-aos-delay="150"
+  >
+    Explore our specialized dental care categories designed to bring you confident smiles and expert care.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 relative z-10">
+    <div 
+      class="relative group aos-treatments"
+      data-aos="fade-right"
+      data-aos-delay="300"
+    >
+      <img src="images/image.jpg" alt="Pain Relief" class="w-full max-w-[220px] mx-auto transition-transform duration-300 group-hover:scale-110" />
+      <div class="absolute top-16 left-0 w-full h-full flex-col items-center justify-center text-center px-4">
+        <h3 class="text-lg font-semibold text-[#006400] pb-2 drop-shadow font-serif">Pain Relief <br>Treatments</h3>
+        <a href="services.html?category=pain-relief" class="mt-auto inline-block text-gray-600 font-semibold hover:underline">View All →</a>
       </div>
     </div>
+    <div 
+      class="relative group aos-treatments"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      <img src="images/image.jpg" alt="Cosmetic" class="w-full max-w-[220px] mx-auto transition-transform duration-300 group-hover:scale-110" />
+      <div class="absolute top-16 left-0 w-full h-full flex-col items-center justify-center text-center px-4">
+        <h3 class="text-lg font-semibold text-[#006400] pb-2 drop-shadow font-serif">Cosmetic <br> Treatments</h3>
+        <a href="services.html?category=cosmetic-treatments" class="mt-auto inline-block text-gray-600 font-semibold hover:underline">View All →</a>
+      </div>
+    </div>
+    <div
+      class="relative group aos-treatments"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      <img src="images/image.jpg" alt="Teeth Replacement" class="w-full max-w-[220px] mx-auto transition-transform duration-300 group-hover:scale-110" />
+      <div class="absolute top-16 left-0 w-full h-full flex-col items-center justify-center text-center px-4">
+        <h3 class="text-lg font-semibold text-[#006400] pb-2 drop-shadow font-serif">Teeth <br> Replacement</h3>
+        <a  href="services.html?category=teeth-replacement" class="mt-auto inline-block text-gray-600 font-semibold hover:underline">View All →</a>
+      </div>
+    </div>
+    <div 
+      class="relative group aos-treatments"
+      data-aos="fade-left"
+      data-aos-delay="300"
+    >
+      <img src="images/image.jpg" alt="Preventive Dentistry" class="w-full max-w-[220px] mx-auto transition-transform duration-300 group-hover:scale-110" />
+      <div class="absolute top-16 left-0 w-full h-full flex-col items-center justify-center text-center px-4">
+        <h3 class="text-lg font-semibold text-[#006400] pb-2  drop-shadow font-serif">Preventive <br> Dentistry</h3>
+        <a href="services.html?category=preventive-dentistry" class="mt-auto inline-block text-gray-600 font-semibold hover:underline">View All →</a>
+      </div>
+    </div>
+  </div>
 </section>
-  
+
 <section id="about_doctor" class="relative py-25 overflow-hidden">
     <div class="absolute top-0 h-full w-full z-0 pointer-events-none">
       <img src="https://img.freepik.com/free-vector/white-background-abstract-with-wavy-line_361591-3889.jpg"
@@ -557,6 +578,33 @@
     });
 
 </script>
-  
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // Animations only once
+    duration: 1000,
+    offset: 100,
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth < 768) {
+      const treatmentItems = document.querySelectorAll('.aos-treatments');
+      treatmentItems.forEach((item, index) => {
+        const direction = index % 2 === 0 ? 'fade-right' : 'fade-left';
+        item.setAttribute('data-aos', direction);
+      });
+
+      // Re-initialize AOS after setting new attributes
+      AOS.init({
+        once: false // or false if you want it to repeat
+      });
+    }
+  });
+</script>
+
+
+
+
 </body>
 </html>

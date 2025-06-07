@@ -55,7 +55,7 @@ body {
   animation: slide-in-right 1s ease forwards;
 }
 .animate-fade-in-up {
-  animation: fade-in-up 2s ease forwards;
+  animation: fade-in-up 1s ease forwards;
 }
 
 /* scroll bottom to top button at end */
@@ -135,5 +135,9 @@ body {
   .online_consultation_container {
     margin-left: 0px;
   }
-}
 
+  #services {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

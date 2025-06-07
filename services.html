@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dentistree Multispeciality Dental Clinic</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .flip-card {
+      perspective: 1000px;
+      cursor: default;
+    }
+  
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+  
+    .flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .flip-front, .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 0.5rem;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+  
+    .flip-front {
+      background: #fff;
+      z-index: 2;
+    }
+  
+    .flip-back {
+      transform: rotateY(180deg);
+      background-color: #f0fdf4;
+      color: #065f46;
+    }
+  
+    .flip-back ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .flip-back li::before {
+      content: "\f5c9"; /* Font Awesome tooth icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      margin-right: 8px;
+    }
+</style>
+  
+<body class="bg-white text-gray-800">
+
+<header id="navbar" class="bg-white shadow-md sticky  top-0 z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-20">
+            <div class="flex hover:scale-105 transition-transform duration-300">
+              <img src="images/logo-3.jpg" alt="Dentistree Dental Clinic" class="h-16 w-20">
+              <img src="images/logo-2.jpg" alt="Dentistree Dental Clinic" class="h-12 w-35 mt-2.5">
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+              <a href="index.html#home" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Home</a>
+              <a href="index.html#about" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">About Us</a>
+              <a href="index.html#treatments" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Treatments</a>
+              <a href="index.html#patients_smile" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Smile Stories</a>
+              <a href="index.html#reviews" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Reviews</a>
+              <a href="index.html#blogs" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Blogs</a>
+              <a href="index.html#contact" class="text-gray-700 hover:text-[#006400]/60 font-medium transition-colors duration-300">Contact Us</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+              <svg class="h-7 w-7 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                   viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white shadow-md">
+          <a href="index.html#home" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Home</a>
+          <a href="index.html#about" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">About Us</a>
+          <a href="index.html#treatments" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Treatments</a>
+          <a href="index.html#patients_smile" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Smile Stories</a>
+          <a href="index.html#reviews" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Reviews</a>
+          <a href="index.html#blogs" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Blogs</a>
+          <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-[#006400]/60 font-medium">Contact Us</a>
+        </div>
+</header>
+<section id="services" class="py-12 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-[#006400] mb-10">Our Treatments</h2>
+      <div class="service-item" data-category="pain-relief">
+        <div class=" max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://stapolloniadental.com/wp-content/uploads/2023/07/Root_Canal_Therapy_AdobeExpress.gif" alt="Root Canal Treatment"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm align-center flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>X-ray and Diagnosis</li>
+                    <li>Local Anesthesia</li>
+                    <li>Pulp Removal</li>
+                    <li>Cleaning and Sealing</li>
+                    <li>Crown Placement</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Root Canal Treatment</h3>
+              <p class="text-gray-700 text-xl mb-2">A procedure to treat infected tooth pulp, relieving pain and saving the tooth.</p>
+              <p class="text-gray-600 text-lg">Ideal for patients with deep cavities, severe toothache, or trauma to the tooth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Wisdom Tooth Removal</h3>
+              <p class="text-gray-700 text-xl mb-2">Surgical extraction of impacted or problematic wisdom teeth to prevent complications.</p>
+              <p class="text-gray-600 text-lg">Recommended when wisdom teeth cause pain, crowding, or infections.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://i.pinimg.com/originals/86/6e/cf/866ecf4af4da788cdfc7ac70959ce5db.gif" alt="Wisdom Tooth Removal"
+                    class="w-full h-full object-cover rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>X-ray Evaluation</li>
+                    <li>Local Anesthesia</li>
+                    <li>Tooth Sectioning</li>
+                    <li>Extraction</li>
+                    <li>Stitching & Healing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://radiantdentalcare.in/wp-content/uploads/2023/03/gum-2.jpeg" alt="Gum Treatment"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Gum Cleaning</li>
+                    <li>Scaling & Root Planing</li>
+                    <li>Antibiotic Therapy</li>
+                    <li>Laser Treatment</li>
+                    <li>Maintenance Checkups</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Gum Treatment</h3>
+              <p class="text-gray-700 text-xl mb-2">Treatment for gum diseases like gingivitis and periodontitis to maintain oral health.</p>
+              <p class="text-gray-600 text-lg">Important for avoiding tooth loss and improving overall dental hygiene.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure→</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">TMJ/TMD</h3>
+              <p class="text-gray-700 text-xl mb-2">Diagnosis and treatment of temporomandibular joint disorders causing jaw pain.</p>
+              <p class="text-gray-600 text-lg">Helpful for relieving headaches, jaw stiffness, and joint clicking sounds.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://www.yourdentistryguide.com/wp-content/uploads/2017/11/tmj.jpg" alt="TMJ/TMD"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Jaw Examination</li>
+                    <li>X-ray/MRI</li>
+                    <li>Night Guard Therapy</li>
+                    <li>Physiotherapy</li>
+                    <li>Follow-up & Relief Plan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-item" data-category="cosmetic-treatments">
+        <div class="px-6 max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-1.gif" alt="Braces Treatment"
+                    class="w-full h-full object-cover rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Initial Consultation</li>
+                    <li>X-ray & Moulds</li>
+                    <li>Bracket Placement</li>
+                    <li>Wire Adjustments</li>
+                    <li>Retention Phase</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Braces Treatment</h3>
+              <p class="text-gray-700 text-xl mb-2">Alignment of teeth using metal or ceramic braces for a beautiful smile.</p>
+              <p class="text-gray-600 text-lg">Best for correcting crooked, gapped, or misaligned teeth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Invisalign</h3>
+              <p class="text-gray-700 text-xl mb-2">Clear aligners for discreet orthodontic treatment and smile enhancement.</p>
+              <p class="text-gray-600 text-lg">Comfortable, removable, and nearly invisible option for teeth straightening.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://stationsquaredental.com.au/wp-content/uploads/2022/04/Invisalign-Clear-Braces-aligner-insert-sequence-Oakleigh-Blue.gif" alt="Invisalign"
+                    class="w-full h-full  rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>3D Scanning</li>
+                    <li>Aligner Fabrication</li>
+                    <li>Progressive Adjustment</li>
+                    <li>Monthly Monitoring</li>
+                    <li>Retainer Use</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://static.wixstatic.com/media/6c01c2_839f592c1dee4447831647fc7bec3914~mv2.gif" alt="Veneers & Laminates"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Smile Analysis</li>
+                    <li>Tooth Preparation</li>
+                    <li>Impression Taking</li>
+                    <li>Custom Veneer Bonding</li>
+                    <li>Final Finishing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Veneers & Laminates</h3>
+              <p class="text-gray-700 text-xl mb-2">Thin shells bonded to teeth to correct color, shape, or size defects.</p>
+              <p class="text-gray-600 text-lg">Ideal for stained, chipped, or uneven teeth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Digital Smile Designing</h3>
+              <p class="text-gray-700 text-xl mb-2">Custom smile transformation using advanced imaging and design tools.</p>
+              <p class="text-gray-600 text-lg">Visualize and plan your perfect smile before starting treatment.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://www.amayadental.in/wp-content/uploads/2023/03/a5.jpg" alt="Digital Smile Designing"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Smile Scan</li>
+                    <li>3D Simulation</li>
+                    <li>Trial Smile</li>
+                    <li>Treatment Planning</li>
+                    <li>Final Smile Makeover</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://drrickdentistry.com/wp-content/uploads/2019/12/how-does-professional-teeth-whitening-work.gif" alt="Teeth Whitening"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Initial Evaluation</li>
+                    <li>Teeth Cleaning</li>
+                    <li>Application of Whitening Gel</li>
+                    <li>Laser or Light Activation</li>
+                    <li>Post-Treatment Care</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Teeth Whitening</h3>
+              <p class="text-gray-700 text-xl mb-2">Brighten your smile with safe and effective in-office whitening solutions.</p>
+              <p class="text-gray-600 text-lg">Perfect for stained teeth from coffee, tobacco, or aging.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-item" data-category="teeth-replacement">
+        <div class="px-6 max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://www.oriondental.hu/wp-content/uploads/2020/08/fogimplant%C3%A1tum.gif" alt="Dental Implants"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Initial Consultation</li>
+                    <li>Implant Placement</li>
+                    <li>Osseointegration</li>
+                    <li>Abutment Attachment</li>
+                    <li>Crown Fitting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Dental Implants</h3>
+              <p class="text-gray-700 text-xl mb-2">Permanent solution for missing teeth by replacing roots with metal posts.</p>
+              <p class="text-gray-600 text-lg">Ideal for restoring chewing function and improving aesthetics.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">All on 4/6 Implant</h3>
+              <p class="text-gray-700 text-xl mb-2">Full arch of teeth fixed using 4 or 6 strategically placed implants.</p>
+              <p class="text-gray-600 text-lg">Best for edentulous patients or those needing full mouth restoration.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://www.shutterstock.com/image-illustration/mandibular-prosthesis-gum-all-on-600nw-2344703981.jpg" alt="All on 4/6 implant"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>CT Scan & Planning</li>
+                    <li>Implant Placement</li>
+                    <li>Immediate Denture Fixing</li>
+                    <li>Healing Period</li>
+                    <li>Final Prosthesis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://nambourdentalpractice.com.au/cdn/shop/files/dentalbridgesbg.gif?v=1718814373&width=1700" alt="Crown & Bridges"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Tooth Preparation</li>
+                    <li>Impression Taking</li>
+                    <li>Temporary Crown</li>
+                    <li>Lab Fabrication</li>
+                    <li>Final Crown Cementation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Crown & Bridges</h3>
+              <p class="text-gray-700 text-xl mb-2">Fixed solutions for restoring damaged or missing teeth using ceramic restorations.</p>
+              <p class="text-gray-600 text-lg">Recommended for cracked, worn, or missing teeth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Dentures</h3>
+              <p class="text-gray-700 text-xl mb-2">Removable replacements for missing teeth and surrounding tissues.</p>
+              <p class="text-gray-600 text-lg">Used for complete or partial tooth loss.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://www.eastwichitadentist.com/images/good-quality-dentures-wichita-ks.jpg" alt="Dentures"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Impression & Bite Registration</li>
+                    <li>Wax Try-in</li>
+                    <li>Final Denture Fitting</li>
+                    <li>Adjustments</li>
+                    <li>Maintenance Advice</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://thedentalstation.com/wp-content/uploads/2020/09/Full-Mouth-Rehablitatiom-1.jpg" alt="Full Mouth Rehabilitation"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Comprehensive Oral Evaluation</li>
+                    <li>Digital Smile Designing</li>
+                    <li>Restorative Planning</li>
+                    <li>Implants & Crowns</li>
+                    <li>Post-Treatment Follow-up</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Full Mouth Rehabilitation</h3>
+              <p class="text-gray-700 text-xl mb-2">Complete restoration of all teeth using a combination of implants, crowns, and prosthetics.</p>
+              <p class="text-gray-600 text-lg">Ideal for severely worn, missing, or damaged teeth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <div class="service-item" data-category="preventive-dentistry">
+        <div class="px-6 max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://lumikadental.com/wp-content/uploads/2025/01/Untitled-design-5.gif" alt="Cavity Filling"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Decay Detection</li>
+                    <li>Cleaning the Cavity</li>
+                    <li>Tooth Preparation</li>
+                    <li>Filling Application</li>
+                    <li>Polishing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Cavity Filling</h3>
+              <p class="text-gray-700 text-xl mb-2">Treating tooth decay using durable and aesthetic filling materials.</p>
+              <p class="text-gray-600 text-lg">Prevents further damage and restores tooth function.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Scaling & Polishing</h3>
+              <p class="text-gray-700 text-xl mb-2">Professional cleaning to remove plaque, tartar, and surface stains.</p>
+              <p class="text-gray-600 text-lg">Essential for gum health and fresh breath.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://resuscitatehospital.org/wp-content/uploads/2021/04/Screenshot-88-e1620296326207.png" alt="Scaling & Polishing"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Examination</li>
+                    <li>Ultrasonic Scaling</li>
+                    <li>Manual Cleaning</li>
+                    <li>Polishing with Paste</li>
+                    <li>Oral Hygiene Advice</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://howardcountydentist.com/system/images/services/dental/interior/pediatric-dentistry/pediatric-dentistry1.jpg" alt="Kids Dentistry"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Child-friendly Evaluation</li>
+                    <li>Cavity Checks</li>
+                    <li>Preventive Cleanings</li>
+                    <li>Fluoride or Sealants</li>
+                    <li>Parent Education</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Kids Dentistry</h3>
+              <p class="text-gray-700 text-xl mb-2">Specialized dental care for children in a friendly and calm environment.</p>
+              <p class="text-gray-600 text-lg">Focus on prevention, education, and early intervention.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-left">
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Bad Breath Treatment</h3>
+              <p class="text-gray-700 text-xl mb-2">Diagnosis and treatment of halitosis by addressing underlying causes.</p>
+              <p class="text-gray-600 text-lg">Boosts confidence and promotes oral hygiene.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://drclemente.com/wp-content/uploads/bad-breath-2302.jpg" alt="Bad Breath Treatment"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Oral Evaluation</li>
+                    <li>Cleaning & Hygiene Review</li>
+                    <li>Treatment of Infections</li>
+                    <li>Tongue Cleaning</li>
+                    <li>Follow-up Care</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row items-center my-12 md:gap-6 fade-in" data-aos="fade-right">
+            <div class="flip-card w-full md:w-1/2 h-64">
+              <div class="flip-inner w-full h-full">
+                <div class="flip-front">
+                  <img src="https://smylesquare.com/assets/images/service/Preventive-Dentistry/fluoride.png" alt="Fluoride Application & Sealants"
+                    class="w-full h-full rounded-lg shadow-md">
+                </div>
+                <div class="flip-back text-sm flex flex-col items-center justify-center text-center">
+                  <h4 class="text-lg font-bold mb-2">Procedure Steps:</h4>
+                  <ul class="space-y-1">
+                    <li>Cleaning the Teeth</li>
+                    <li>Fluoride Gel Application</li>
+                    <li>Drying & Curing</li>
+                    <li>Sealant Placement</li>
+                    <li>Post-Application Advice</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-6">
+              <h3 class="text-2xl font-bold mb-2 text-[#006400]">Fluoride Application & Sealants</h3>
+              <p class="text-gray-700 text-xl mb-2">Protective treatments that strengthen enamel and prevent decay.</p>
+              <p class="text-gray-600 text-lg">Highly recommended for children and cavity-prone teeth.</p>
+              <a class="read-more mt-auto inline-block pt-3 text-green-700 font-semibold hover:underline">View Procedure →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script>
+  // Filter services based on URL parameter
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+
+  document.querySelectorAll('.service-item').forEach(item => {
+    if (!category || item.dataset.category === category) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+
+  //navbar
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  const navLinks = mobileMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+
+</script>
+<!-- Include AOS library for animations -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+    document.querySelectorAll('.read-more').forEach(link => {
+      link.addEventListener('click', () => {
+        const container = link.closest('.flex');
+        const card = container.querySelector('.flip-card');
+        card.classList.add('flipped');
+        setTimeout(() => {
+          card.classList.remove('flipped');
+        }, 3000);
+      });
+    });
+</script>
+
+</body>
+</html>
